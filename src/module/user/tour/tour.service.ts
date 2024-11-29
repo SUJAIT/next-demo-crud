@@ -45,7 +45,14 @@ const deleteTour = async (id: string) => {
     return result
 }
 
-
+const getNextSchedul = async (id:string) =>{
+    const tour = await Tour.findById(id) 
+   const nextSchedule = tour?.getNextNearestStartDateAndEndData()
+    return{
+        tour,
+        nextSchedule
+    }
+}
 
 
 
@@ -54,5 +61,6 @@ export const tourService = {
     getTours,
     getSingleTour,
     UpdateTour,
-    deleteTour
+    deleteTour,
+    getNextSchedul
 }
