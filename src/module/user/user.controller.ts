@@ -86,7 +86,7 @@ const DeleteUser = async (req: Request, res: Response) => {
         // const result = await userService.DeleteUser(userId)
         res.send({
             status: true,
-            message: 'SOmething is Ok 🤗😎',
+            message: 'Success Fully Delete 🤗😎',
             result: {},//[note: result: {} akna karlibasses use ababa kora mana holo amara return ar madaoma result pata tam so sata na patanur jonno ababa object ta use kora ,,ar result  ba return ta na patanur karon holo ata deleted data so na pata lau hoi arki,, saila patalau kisu hoba na]
         })
     } catch (error) {
